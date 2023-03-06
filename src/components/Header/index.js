@@ -1,38 +1,51 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    margin:auto 354px;
+    max-width:1316px;
+    margin:auto ;
     padding: 15px;
     display: flex;
 
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+   margin:0;
+   
+}
+`;
+
+
+export const Image = styled.img`
+margin-top: 115px;
+
+max-width: 368px;
+max-height: 368px;
+border-radius:100%;
+border:1px solid;
+@media (min-width:${({ theme}) => theme.breakpoints.mobile}px){
     margin:auto;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
     
 }
 `;
-export const Image = styled.img`
-margin-top: 115px ;
-width: 368px;
-height: 368px;
-border-radius:100%;
+export const Span = styled.span`
+font-size: 12px;
+line-height: 130%;
+color:${({ theme }) => theme.colors.slateGray};
+
+display: flex;
+flex-direction: column;
+margin-top: auto;
+margin-left:66px ;
 
 `;
 
 export const Title = styled.h1`
-display: flex;
-flex-direction: column;
-justify-content:space-around;
-align-content: space-around;
 font-size: 38px;
 color:${({ theme }) => theme.colors.black};
-align-self: start;
-margin-top: 211px;
-margin-left:66px ;
+font-weight: 900;
+
+
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    margin:0%;
+  margin:5px;
+    
 }
 `;
 export const Article = styled.article`
@@ -43,7 +56,12 @@ line-height: 140%;
 color:${({ theme }) => theme.colors.slateGray};
 line-height: 140%;
 letter-spacing: 0.05em;
-word-wrap:break-word;
+
+@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    margin:auto;
+    
+}
+
 `;
 
 export const A = styled.a`
@@ -68,9 +86,15 @@ export const Button = styled.button`
 border: none;
 cursor: pointer;
 background: none;
-display: grid;
-grid-template-columns: 1fr auto;
-align-self: end;
+margin-top: 115px;
+font-size: 12px;
+line-height: 130%;
+padding:5px;
+min-width:250px ;
+display: flex;
+flex-direction: row-reverse;
 
-
-`
+@media (min-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    flex-direction: row-reverse;
+}
+`;

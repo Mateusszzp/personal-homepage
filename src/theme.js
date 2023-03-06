@@ -8,7 +8,7 @@ export const theme = {
         white:"#FFFFFF"
     }, 
     breakpoints:{
-        mobile:767,
+        mobile:880,
         mobileMax:600,
     }
 }

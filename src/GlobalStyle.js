@@ -15,9 +15,7 @@ html {
   #root{
     background:${({ theme }) => theme.colors.lilic} ;
     font-family:'Inter', serif ;
-    height: 2312px;
-    width: 1920px;
-    
+   
 } 
    `;
 
