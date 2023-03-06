@@ -8,8 +8,8 @@ function App() {
   return (
 
     <div>
-
-      <Section><Button>Dark mode on<img src={toggleMode} alt=""/></Button>
+<Button><img src={toggleMode} alt=""/></Button>
+      <Section>
         <Image src={mateuszP} alt="" />
         
         <Title>Mateusz Paśko

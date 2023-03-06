@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-margin:auto 354px;
-padding: 15px;
-display: flex;
+    margin:auto 354px;
+    padding: 15px;
+    display: flex;
 
-@media (max-width:${({theme}) => theme.breakpoints.mobile}px) {
+@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     margin:auto;
-    
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -32,7 +31,7 @@ color:${({ theme }) => theme.colors.black};
 align-self: start;
 margin-top: 211px;
 margin-left:66px ;
-@media (max-width:${({theme}) => theme.breakpoints.mobile}px) {
+@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     margin:0%;
 }
 `;
@@ -41,15 +40,15 @@ margin-top: 35px;
 font-size: 20px;
 align-self: end;
 line-height: 140%;
-color:${({theme}) => theme.colors.slateGray};
+color:${({ theme }) => theme.colors.slateGray};
 line-height: 140%;
 letter-spacing: 0.05em;
 word-wrap:break-word;
 `;
 
 export const A = styled.a`
-background:${({theme}) => theme.colors.scienceBlue};
-color:${({theme}) => theme.colors.white};
+background:${({ theme }) => theme.colors.scienceBlue};
+color:${({ theme }) => theme.colors.white};
 text-decoration: none;
 padding:6px;
 height: 49px;
@@ -68,10 +67,10 @@ font-style: normal;
 export const Button = styled.button`
 border: none;
 cursor: pointer;
-display: flex;
-
-justify-content:flex-end;
 background: none;
-display: flex;
+display: grid;
+grid-template-columns: 1fr auto;
+align-self: end;
+
 
 `
