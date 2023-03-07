@@ -4,7 +4,11 @@ export const Section = styled.section`
     max-width:1316px;
     margin:auto ;
     padding: 15px;
-    display: flex;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    
+     
+    
 
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
    margin:0;
@@ -14,12 +18,12 @@ export const Section = styled.section`
 
 
 export const Image = styled.img`
-margin-top: 115px;
 
-max-width: 368px;
-max-height: 368px;
+max-width: 368px ;
+max-height: 368px ;
 border-radius:100%;
 border:1px solid;
+grid-column-start:1;
 @media (min-width:${({ theme}) => theme.breakpoints.mobile}px){
     margin:auto;
     
@@ -29,11 +33,12 @@ export const Span = styled.span`
 font-size: 12px;
 line-height: 130%;
 color:${({ theme }) => theme.colors.slateGray};
+align-self: center;
+grid-column-start:2;
+grid-column-end:span 3;
+margin: auto 66px;
 
-display: flex;
-flex-direction: column;
-margin-top: auto;
-margin-left:66px ;
+
 
 `;
 
@@ -41,7 +46,6 @@ export const Title = styled.h1`
 font-size: 38px;
 color:${({ theme }) => theme.colors.black};
 font-weight: 900;
-
 
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
   margin:5px;
@@ -56,9 +60,11 @@ line-height: 140%;
 color:${({ theme }) => theme.colors.slateGray};
 line-height: 140%;
 letter-spacing: 0.05em;
+align-self: center;
+justify-content:center;
 
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    margin:auto;
+    
     
 }
 
@@ -86,15 +92,15 @@ export const Button = styled.button`
 border: none;
 cursor: pointer;
 background: none;
-margin-top: 115px;
-font-size: 12px;
-line-height: 130%;
-padding:5px;
-min-width:250px ;
-display: flex;
-flex-direction: row-reverse;
 
-@media (min-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    flex-direction: row-reverse;
-}
+font-size: 12px;
+
+
+
+grid-column-start:3;
+justify-self: end;
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
+align-items: center;
 `;

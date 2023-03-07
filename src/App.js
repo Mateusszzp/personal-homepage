@@ -7,18 +7,21 @@ import toggleMode from "./image/ToggleMode.png"
 function App() {
   return (
 
-    <div><Button ><img src={toggleMode} alt=""/>DARK MODE ON</Button>
-        <Section>
+    <div>
       
-        <Image src={mateuszP} alt=""/>
+      <Section>
+
+        <Image src={mateuszP} alt="" />
+        
         <Span>This is
-        <Title>Mateusz Paśko</Title>
+      <Button >DARK MODE OFF <img src={toggleMode} alt="" /></Button>
+
+          <Title>Mateusz Paśko</Title>
           <Article>⚒⏳ Progamowanie jest dla mnie nowym doświadczeniem i przyjemność. Odnalazłem swoje miejsce w IT</Article>
           <A href="mailto:mateusz.pasko.r@gmail.com">✉ Hire me</A>
-          </Span>
+        </Span>
         
       </Section>
-      
     </div>
 
 

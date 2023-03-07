@@ -15,6 +15,7 @@ html {
   #root{
     background:${({ theme }) => theme.colors.lilic} ;
     font-family:'Inter', serif ;
+    
    
 } 
    `;
