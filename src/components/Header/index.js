@@ -1,67 +1,83 @@
 import styled from "styled-components";
 
+
 export const Section = styled.section`
-    max-width:1316px;
-    margin:auto ;
-    padding: 15px;
+    max-width:1216px;
+    margin: auto ;
+    margin-top: 115px;
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(2,auto);
+   
+    
     
      
     
-
-@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
    margin:0;
    
-}
+  }
 `;
+
+export const Wrapper = styled.div`
+display: flex;
+justify-content: center;
+flex-direction:column ;
+margin-left: 66px;
+
+@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+ grid-row-start: 2;
+ margin: 15px;
+    
+
+}
+`
 
 
 export const Image = styled.img`
-
-max-width: 368px ;
-max-height: 368px ;
-border-radius:100%;
-border:1px solid;
-grid-column-start:1;
-@media (min-width:${({ theme}) => theme.breakpoints.mobile}px){
-    margin:auto;
+    max-width: 368px ;
+    max-height: 368px ;
+    border-radius:100%;
+    border:1px solid;
+   
     
-}
+
+
+   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+    margin:auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
 `;
 export const Span = styled.span`
-font-size: 12px;
-line-height: 130%;
-color:${({ theme }) => theme.colors.slateGray};
-align-self: center;
-grid-column-start:2;
-grid-column-end:span 3;
-margin: auto 66px;
-
-
+    font-size: 12px;
+    
+    color:${({ theme }) => theme.colors.slateGray};
+    text-transform: uppercase;
+    font-weight: bold;
 
 `;
 
 export const Title = styled.h1`
-font-size: 38px;
-color:${({ theme }) => theme.colors.black};
-font-weight: 900;
+    font-size: 38px;
+    color:${({ theme }) => theme.colors.black};
+    font-weight: 900;
 
-@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-  margin:5px;
+   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    margin:5px;
     
-}
+  }
 `;
 export const Article = styled.article`
-margin-top: 35px;
-font-size: 20px;
-align-self: end;
-line-height: 140%;
-color:${({ theme }) => theme.colors.slateGray};
-line-height: 140%;
-letter-spacing: 0.05em;
-align-self: center;
-justify-content:center;
+    
+    font-size: 20px;
+    
+    line-height: 140%;
+    color:${({ theme }) => theme.colors.slateGray};
+    
+    letter-spacing: 0.05em;
+
+
+
 
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     
@@ -71,36 +87,32 @@ justify-content:center;
 `;
 
 export const A = styled.a`
-background:${({ theme }) => theme.colors.scienceBlue};
-color:${({ theme }) => theme.colors.white};
-text-decoration: none;
-padding:6px;
-height: 49px;
-width: 154px;
-font-size: 20px;
-display: flex;
-align-items: center;
-text-align: center;
-justify-content:center;
-margin-top: 32px;
-letter-spacing: 0.05em;
-font-style: normal;
-
+    background:${({ theme }) => theme.colors.scienceBlue};
+    color:${({ theme }) => theme.colors.white};
+    text-decoration: none;
+    height: 49px;
+    width: 154px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 32px;
+   
 `;
 
 export const Button = styled.button`
-border: none;
-cursor: pointer;
-background: none;
-
-font-size: 12px;
-
-
-
-grid-column-start:3;
-justify-self: end;
-display:flex;
-flex-direction:row;
-justify-content: space-evenly;
-align-items: center;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 12px;
+    align-self: end;
+    display:flex;
+    align-items: center;
+    padding:20px;
+    align-content: space-around;
+    
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+   grid-row-start:span 1;
+    
+  }
 `;
