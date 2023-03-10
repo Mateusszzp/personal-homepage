@@ -3,87 +3,70 @@ import styled from "styled-components";
 
 export const Section = styled.section`
     max-width:1216px;
-    margin: auto ;
+    margin :auto;
     margin-top: 115px;
     display:grid;
     grid-template-columns:repeat(2,auto);
-   
-    
-    
-     
-    
-   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-   margin:0;
-   
-  }
+    grid-template-rows:  repeat(3fr auto);
+
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-template-columns: 1fr;
+    margin-top:32px;
+   }
 `;
 
 export const Wrapper = styled.div`
-display: flex;
-justify-content: center;
-flex-direction:column ;
-margin-left: 66px;
-
-@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
- grid-row-start: 2;
- margin: 15px;
-    
-
-}
-`
-
-
-export const Image = styled.img`
-    max-width: 368px ;
-    max-height: 368px ;
-    border-radius:100%;
-    border:1px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    margin-left: 66px;
+    margin-right: 10px;
    
-    
-
-
-   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
-    margin:auto;
-    max-width: 100%;
-    max-height: 100%;
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-row-start:4;
+    grid-column-end: span 2;
+    margin: 15px;
   }
 `;
+
+export const Image = styled.img`
+    width: 398px ;
+    height: 398px ;
+    border-radius:100%;
+    border:1px solid;
+    grid-row-end:span 3;
+    
+   
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+    margin-top:32px;
+    margin-left:13px;
+    
+  }
+`;
+
 export const Span = styled.span`
     font-size: 12px;
-    
     color:${({ theme }) => theme.colors.slateGray};
     text-transform: uppercase;
     font-weight: bold;
-
 `;
 
 export const Title = styled.h1`
     font-size: 38px;
     color:${({ theme }) => theme.colors.black};
     font-weight: 900;
+    margin:12px 0 35px ;
 
-   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    margin:5px;
-    
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    margin-top:8px;
+    margin-bottom: 16px;
   }
 `;
 export const Article = styled.article`
-    
     font-size: 20px;
-    
     line-height: 140%;
     color:${({ theme }) => theme.colors.slateGray};
-    
     letter-spacing: 0.05em;
-
-
-
-
-@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    
-    
-}
-
 `;
 
 export const A = styled.a`
@@ -97,7 +80,11 @@ export const A = styled.a`
     align-items: center;
     justify-content:center;
     margin-top: 32px;
-   
+
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    margin-top:24px;
+    margin-bottom: 46px;
+  }
 `;
 
 export const Button = styled.button`
@@ -109,10 +96,10 @@ export const Button = styled.button`
     display:flex;
     align-items: center;
     padding:20px;
-    align-content: space-around;
+    justify-self: end;
     
-    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-   grid-row-start:span 1;
-    
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+    grid-column-start:-1;
+    color:transparent;
   }
 `;

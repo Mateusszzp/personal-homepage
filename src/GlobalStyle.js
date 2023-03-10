@@ -12,11 +12,10 @@ html {
     box-sizing: inherit;
    }
 
-  #root{
+  body{
     background:${({ theme }) => theme.colors.lilic} ;
     font-family:'Inter', serif ;
-    
-   
+  
 } 
    `;
 
