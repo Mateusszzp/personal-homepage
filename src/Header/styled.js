@@ -1,8 +1,9 @@
 import styled from "styled-components";
-
+import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
 
 export const Section = styled.section`
-    max-width:1216px;
+    width:1320px;
+    max-width: 1300px;
     margin :auto;
     margin-top: 115px;
     display:grid;
@@ -29,7 +30,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(mateuszP)`
     width: 398px ;
     height: 398px ;
     border-radius:100%;
