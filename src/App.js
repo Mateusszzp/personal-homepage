@@ -1,3 +1,4 @@
+import { Container } from "./Container/styled";
 import Header from "./Header";
 
 
@@ -6,8 +7,14 @@ import Header from "./Header";
 
 function App() {
   return (
-    <Header />
+    <Container>
+      <Header />
+    </Container>
+  
   )
 };
+
+
+  
 
 export default App;

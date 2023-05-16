@@ -2,17 +2,17 @@ import styled from "styled-components";
 import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
 
 export const Section = styled.section`
-    width:1320px;
-    max-width: 1300px;
-    margin :auto;
-    margin-top: 115px;
+   
+    
     display:grid;
     grid-template-columns:repeat(2,auto);
     grid-template-rows:  repeat(3fr auto);
 
-  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    grid-template-columns: 1fr;
-    margin-top:32px;
+  @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
+    max-width: 80vw;
+    margin:auto;
+
+   
    }
 `;
 
@@ -37,11 +37,11 @@ export const Image = styled(mateuszP)`
     border:1px solid;
     grid-row-end:span 3;
     
-   
-  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
-    margin-top:32px;
-    margin-left:13px;
     
+   
+  @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+    width: 28vw ;
+    height: 28vw ;
   }
 `;
 
