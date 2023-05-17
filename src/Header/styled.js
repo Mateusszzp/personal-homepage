@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
 
 export const Section = styled.section`
-   
-    
     display:grid;
     grid-template-columns:repeat(2,auto);
     grid-template-rows:  repeat(3fr auto);
@@ -11,10 +9,10 @@ export const Section = styled.section`
   @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
     max-width: 80vw;
     margin:auto;
-
-   
-   }
-`;
+}
+@media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+    grid-template-columns:1fr;
+}`;
 
 export const Wrapper = styled.div`
     display: flex;
@@ -24,7 +22,7 @@ export const Wrapper = styled.div`
     margin-right: 10px;
    
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    grid-row-start:4;
+    grid-row-start:5;
     grid-column-end: span 2;
     margin: 15px;
   }
@@ -39,9 +37,10 @@ export const Image = styled(mateuszP)`
     
     
    
-  @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
     width: 28vw ;
     height: 28vw ;
+    grid-row-start: 2;
   }
 `;
 
@@ -49,7 +48,9 @@ export const Span = styled.span`
     font-size: 12px;
     color:${({ theme }) => theme.colors.slateGray};
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
+
+    
 `;
 
 export const Title = styled.h1`
@@ -61,6 +62,8 @@ export const Title = styled.h1`
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     margin-top:8px;
     margin-bottom: 16px;
+    font-size: 22px;
+   
   }
 `;
 export const Article = styled.article`
@@ -68,6 +71,10 @@ export const Article = styled.article`
     line-height: 140%;
     color:${({ theme }) => theme.colors.slateGray};
     letter-spacing: 0.05em;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+      font-size: 17px;
+    }
 `;
 
 export const A = styled.a`
@@ -98,9 +105,12 @@ export const Button = styled.button`
     align-items: center;
     padding:20px;
     justify-self: end;
-    
-  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
-    grid-column-start:-1;
+   
+    @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
+    grid-row-start:1;
+    }
+    @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
     color:transparent;
+    margin: 0;
   }
 `;
