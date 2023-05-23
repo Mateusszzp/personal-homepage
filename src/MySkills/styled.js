@@ -1,0 +1,61 @@
+import styled from "styled-components";
+import { ReactComponent as vector } from "../image/vector.svg"
+import { ReactComponent as toggle } from "../image/toggle.svg"
+
+
+export const Section = styled.div`
+background: ${({ theme }) => theme.colors.white};
+margin-top: 63px;
+box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+border-radius: 4px;
+display:flex;
+flex-direction:column;
+`;
+
+export const H2 = styled.h2`
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color:${({ theme }) => theme.colors.black};
+
+`;
+
+export const Li = styled.li`
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color:${({ theme }) => theme.colors.slateGray};
+    list-style-image: blue;
+`; 
+
+export const Toggle= styled(toggle)`
+    width:85px;
+    height:85px;
+    align-self: center;
+    position: absolute;
+    margin-inline: 5px;
+    transition:all 0.8s ease-out;
+
+&:active {
+   transform: rotate(180deg);
+   translate: 90px;
+    
+}
+`;
+export const Vector = styled(vector)`
+    width: 200px;
+    height: 200px;
+    
+`;
+export const Button1 = styled.button`
+display: flex;
+width: 200px;
+height:300px;
+align-items:center;
+cursor: pointer;
+
+
+;
+`

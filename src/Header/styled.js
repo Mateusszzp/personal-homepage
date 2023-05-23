@@ -1,17 +1,19 @@
 import styled from "styled-components";
 import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
-
+import buttonToggle from "../image/ToggleMode.png"
 export const Section = styled.section`
     display:grid;
     grid-template-columns:repeat(2,auto);
     grid-template-rows:  repeat(3fr auto);
+    margin-top: 115px;
 
   @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
     max-width: 80vw;
-    margin:auto;
+    
 }
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
     grid-template-columns:1fr;
+    margin:auto;
 }`;
 
 export const Wrapper = styled.div`
@@ -21,6 +23,7 @@ export const Wrapper = styled.div`
     margin-left: 66px;
     margin-right: 10px;
    
+
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     grid-row-start:5;
     grid-column-end: span 2;
@@ -35,12 +38,52 @@ export const Image = styled(mateuszP)`
     border:1px solid;
     grid-row-end:span 3;
     
-    
+    @media (max-width:${({ theme }) => theme.breakpoints.full}px){
+      margin-left: 20px;
+    }
+    @media (max-width:${({ theme }) => theme.breakpoints.small}px){
+      width:calc(70% - 1vw);
+      height:calc(80% - 1em);
+      
+
+    }
    
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
-    width: 28vw ;
-    height: 28vw ;
-    grid-row-start: 2;
+    min-width:calc(100% + 30vw /4 );
+     
+      
+    grid-row-end: 2;
+    margin-top: 30px;
+    
+  }
+`;
+export const Button = styled.button`
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    //background-image: url(${buttonToggle});
+    //background-repeat:no-repeat;
+    //width: 50px;
+    //height: 28px;
+
+    
+    font-size: 12px;
+    align-self: end;
+    display:flex;
+    align-items: center;
+    
+    justify-self: end;
+
+   
+    @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
+    grid-row-start:1;
+    }
+    @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
+    color:transparent;
+    margin: 0;
+    grid-row-start:1;
+    
+  
   }
 `;
 
@@ -95,22 +138,8 @@ export const A = styled.a`
   }
 `;
 
-export const Button = styled.button`
-    border: none;
-    cursor: pointer;
-    background: none;
-    font-size: 12px;
-    align-self: end;
-    display:flex;
-    align-items: center;
-    padding:20px;
-    justify-self: end;
-   
-    @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
-    grid-row-start:1;
-    }
-    @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
-    color:transparent;
-    margin: 0;
-  }
-`;
+/* Vector */
+
+
+
+

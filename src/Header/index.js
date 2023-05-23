@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <Section>
             <Image />
-            <Button > DARK MODE OFF<img src={toggleMode} alt="" /></Button>
+            <Button > DARK MODE OFF <img src={toggleMode} alt="" /></Button>
             <Wrapper>
                 <Span>This is</Span>
                 <Title>Mateusz Paśko</Title>
