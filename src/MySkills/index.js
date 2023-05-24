@@ -31,11 +31,11 @@ const MySkills = () => {
             <Li>NPM</Li>
             <Li>React</Li>
             <Li>Git</Li>
-            <Button1><Toggle/><Vector/></Button1>
+           
             
         </Section>
         
-        
+        <Button1><Toggle/><Vector/></Button1>
         </>
     )
 }
