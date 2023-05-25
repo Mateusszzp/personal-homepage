@@ -13,6 +13,7 @@ flex-direction:column;
 max-height: 404px;
 display: grid;
     grid-template-columns: repeat(auto-fit, minmax(608px, 1fr));
+    
 `;
 
 export const H2 = styled.h2`
@@ -22,10 +23,13 @@ grid-column-end: span 2;
     line-height: 36px;
     letter-spacing: 0.05em;
     color:${({ theme }) => theme.colors.black};
-
+    margin-left: 34px;
 `;
 
 export const Li = styled.li`
+justify-self: center;
+   margin-left: 32px;
+   
    
 
     font-weight: 400;
@@ -44,8 +48,9 @@ export const Toggle= styled(toggle)`
     position: absolute;
     margin-inline: 5px;
     transition:all 0.8s ease-out;
+ 
 
-&:active{
+&:checked{
    transform: rotate(180deg);
    translate: 90px;
    color:blue;
@@ -55,7 +60,7 @@ export const Toggle= styled(toggle)`
 export const Vector = styled(vector)`
     width: 250px;
     height: 200px;
-    
+    pointer-events: none;
 `;
 export const Button1 = styled.button`
 display: flex;
@@ -66,6 +71,7 @@ cursor: pointer;
 border-radius: 100%;
 border: none;
 background: none;
+pointer-events: painted;
 
 ;
 `
