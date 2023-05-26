@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as vector } from "../image/vector.svg"
 import { ReactComponent as toggle } from "../image/toggle.svg"
+import circle from "../image/circle.svg"
 
 
 export const Section = styled.div`
@@ -43,7 +44,10 @@ export const Li = styled.li`
     line-height: 140%;
     letter-spacing: 0.05em;
     color:${({ theme }) => theme.colors.slateGray};
-    list-style-image: blue;
+    display: list-item;
+    list-style-image: url(${circle}) ;
+   
+    
 
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 14px;
