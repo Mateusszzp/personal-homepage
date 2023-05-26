@@ -45,13 +45,12 @@ export const Image = styled(mateuszP)`
       width:calc(70% - 1vw);
       height:calc(80% - 1em);
       
+      
 
     }
    
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
     min-width:calc(100% + 30vw /4 );
-     
-      
     grid-row-end: 2;
     margin-top: 30px;
     
@@ -115,6 +114,9 @@ export const Article = styled.article`
     color:${({ theme }) => theme.colors.slateGray};
     letter-spacing: 0.05em;
 
+    @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
+      margin-top:0 ;
+    }
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
       font-size: 17px;
     }

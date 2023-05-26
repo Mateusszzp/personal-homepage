@@ -8,7 +8,6 @@ const MySkills = () => {
             <H2>
                 My skillset includes 🛠
             </H2>
-
             <Li>Semantic & accessible HTML</Li>
             <Li>Responsive Web Design</Li>
             <Li>Teamwork</Li>
@@ -31,11 +30,9 @@ const MySkills = () => {
             <Li>NPM</Li>
             <Li>React</Li>
             <Li>Git</Li>
-           
-            
         </Section>
-        
-        <Button1><Toggle/><Vector/></Button1>
+
+            <Button1><Toggle /><Vector /></Button1>
         </>
     )
 }
