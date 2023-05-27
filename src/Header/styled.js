@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
-import buttonToggle from "../image/ToggleMode.png"
+import { ReactComponent as vector } from "../image/vector.svg";
+import { ReactComponent as toggle } from "../image/toggle.svg";
+
 export const Section = styled.section`
     display:grid;
     grid-template-columns:repeat(2,auto);
@@ -45,9 +47,7 @@ export const Image = styled(mateuszP)`
       width:calc(70% - 1vw);
       height:calc(80% - 1em);
       
-      
-
-    }
+  }
    
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
     min-width:calc(100% + 30vw /4 );
@@ -56,27 +56,38 @@ export const Image = styled(mateuszP)`
     
   }
 `;
-export const Button = styled.button`
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    //background-image: url(${buttonToggle});
-    //background-repeat:no-repeat;
-    //width: 50px;
-    //height: 28px;
 
+export const Vector = styled(vector)`
+    width: 98px;
+    height: 47px;
+    border: none;
+    position: absolute;
     
-    font-size: 12px;
-    align-self: end;
+  
+`;
+export const Toggle = styled(toggle)`
+    width:40px;
+    height:40px;
+    margin-inline:10px;
+    transition:all 0.4s ;
+   
+    position: relative;
+   
+&:active{
+   transform: rotate(360deg);
+   translate: 100%;
+   }
+`;
+export const ChangeColor = styled.div`
+   cursor: pointer;
     display:flex;
     align-items: center;
-    
     justify-self: end;
-
-   
-    @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
+    align-self: end;
+  @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
     grid-row-start:1;
     }
+
     @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
     color:transparent;
     margin: 0;

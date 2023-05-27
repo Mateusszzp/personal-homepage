@@ -55,31 +55,15 @@ export const Li = styled.li`
     }
 `; 
 
-export const Toggle= styled(toggle)`
-    width:85px;
-    height:85px;
-    align-self: center;
-    position: absolute;
-    margin-inline: 5px;
-    transition:all 0.8s ease-out;
- 
-&:active{
-   transform: rotate(180deg);
-   translate: 90px;
-   }
-`;
-export const Vector = styled(vector)`
-    width: 250px;
-    height: 200px;
-  
-`;
-export const Button1 = styled.button`
-    display: flex;
-    width: 178px;
-    height:100px;
-    align-items:center;
-    cursor: pointer;
-    border-radius: 100%;
-    border: none;
-    background: none;
-;`
+
+
+// export const Button1 = styled.button`
+//     /* display: flex;
+//     width: 178px;
+//     height:100px;
+//     align-items:center;
+//     cursor: pointer;
+//     border-radius: 100%;
+//     border: none;
+//     background: none; */
+//    `;

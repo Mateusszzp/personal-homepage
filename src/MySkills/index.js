@@ -1,5 +1,4 @@
-
-import { Button1, H2, Li, Section, Toggle, Vector } from "./styled"
+import { H2, Li, Section } from "./styled"
 
 
 const MySkills = () => {
@@ -31,10 +30,8 @@ const MySkills = () => {
             <Li>React</Li>
             <Li>Git</Li>
         </Section>
-
-            <Button1><Toggle /><Vector /></Button1>
         </>
     )
-}
+};
 
 export default MySkills;
