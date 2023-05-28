@@ -56,34 +56,13 @@ export const Image = styled(mateuszP)`
     
   }
 `;
-
-export const Vector = styled(vector)`
-    width: 98px;
-    height: 47px;
-    border: none;
-    position: absolute;
-    
-  
-`;
-export const Toggle = styled(toggle)`
-    width:40px;
-    height:40px;
-    margin-inline:10px;
-    transition:all 0.4s ;
-   
-    position: relative;
-   
-&:active{
-   transform: rotate(360deg);
-   translate: 100%;
-   }
-`;
 export const ChangeColor = styled.div`
    cursor: pointer;
     display:flex;
     align-items: center;
-    justify-self: end;
-    align-self: end;
+    justify-content: flex-end;
+   
+   
   @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
     grid-row-start:1;
     }
@@ -96,6 +75,32 @@ export const ChangeColor = styled.div`
   
   }
 `;
+export const DarkMode = styled.span`
+margin-right: 2%;
+ 
+  
+  
+`;
+export const Vector = styled(vector)`
+    width: 98px;
+    height: 47px;
+    border: none;
+   
+  `;
+export const Toggle = styled(toggle)`
+    width:40px;
+    height:40px;
+    margin-inline:10px;
+    transition:all 0.4s ;
+ 
+    position: absolute;
+   
+&:active{
+   transform: rotate(360deg);
+   translate: 100%;
+   }
+`;
+
 
 export const Span = styled.span`
     font-size: 12px;

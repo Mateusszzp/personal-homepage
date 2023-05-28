@@ -1,6 +1,6 @@
-import { A, Article, Button, ChangeColor, Image, Section, Span, Title, Toggle, Vector, Wrapper } from "./styled";
+import { A, Article,  ChangeColor, DarkMode, Image, Section, Span, Title, Toggle, Vector, Wrapper } from "./styled";
 
-import toggleMode from "../image/ToggleMode.png"
+
 
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <Section>
             <Image />
-            <ChangeColor><Vector/><Toggle /></ChangeColor>
+            <ChangeColor><DarkMode>Dark mode off</DarkMode><Vector/><Toggle /></ChangeColor>
             <Wrapper>
                 <Span>This is</Span>
                 <Title>Mateusz Paśko</Title>
