@@ -1,4 +1,5 @@
-import { H2, Li, Section } from "./styled"
+import { H2, Li, Section } from "../Common/styled";
+
 
 
 const MySkills = () => {

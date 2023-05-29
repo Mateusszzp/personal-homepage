@@ -1,5 +1,6 @@
 import { Container } from "./Container/styled";
 import Header from "./Header";
+import Learn from "./Learn";
 import MySkills from "./MySkills";
 
 
@@ -11,6 +12,7 @@ function App() {
     <Container>
       <Header />
       <MySkills/>
+      <Learn/>
     </Container>
   
   )

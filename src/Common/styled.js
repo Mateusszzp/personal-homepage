@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as vector } from "../image/vector.svg"
-import { ReactComponent as toggle } from "../image/toggle.svg"
 import circle from "../image/circle.svg"
-
 
 export const Section = styled.div`
     background: ${({ theme }) => theme.colors.white};
@@ -35,7 +32,6 @@ export const H2 = styled.h2`
     line-height: 22px;
 }
 `;
-
 export const Li = styled.li`
     justify-self: start;
     margin: 8px 32px;
@@ -54,16 +50,3 @@ export const Li = styled.li`
     line-height: 17px;
     }
 `; 
-
-
-
-// export const Button1 = styled.button`
-//     /* display: flex;
-//     width: 178px;
-//     height:100px;
-//     align-items:center;
-//     cursor: pointer;
-//     border-radius: 100%;
-//     border: none;
-//     background: none; */
-//    `;

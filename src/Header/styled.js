@@ -79,7 +79,6 @@ export const DarkMode = styled.span`
 margin-right: 2%;
  
   
-  
 `;
 export const Vector = styled(vector)`
     width: 98px;
