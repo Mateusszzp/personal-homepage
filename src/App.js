@@ -2,6 +2,7 @@ import { Container } from "./Container/styled";
 import Header from "./Header";
 import Learn from "./Learn";
 import MySkills from "./MySkills";
+import Portfolio from "./Portfolio";
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <MySkills/>
       <Learn/>
+      <Portfolio/>
     </Container>
   
   )

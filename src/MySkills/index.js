@@ -6,7 +6,7 @@ const MySkills = () => {
     return (
         <><Section>
             <H2>
-                My skillset includes 🛠
+                My skillset includes 🛠📂
             </H2>
             <Li>Semantic & accessible HTML</Li>
             <Li>Responsive Web Design</Li>

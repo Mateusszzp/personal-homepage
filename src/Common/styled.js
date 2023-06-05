@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import circle from "../image/circle.svg"
 
 export const Section = styled.div`
@@ -10,6 +10,11 @@ export const Section = styled.div`
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+ 
+ ${({second}) => second && css`
+    min-height:151px;
+`}
+
 `;
 
 export const H2 = styled.h2`
@@ -41,7 +46,8 @@ export const Li = styled.li`
     letter-spacing: 0.05em;
     color:${({ theme }) => theme.colors.slateGray};
     display: list-item;
-    list-style-image: url(${circle}) ;
+    list-style-image: url(${circle});
+    padding-bottom: 5%;
    
     
 
