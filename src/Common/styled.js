@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import circle from "../image/circle.svg"
 
 export const Section = styled.div`
@@ -9,10 +9,11 @@ export const Section = styled.div`
     min-height:500px;
     display: grid;
     justify-content: space-around;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); // tu mieliśmy auto potrzebna responsywność 
  
- ${({second}) => second && css`
+ ${({ second }) => second && css`
     min-height:151px;
+   
 `}
 
 `;
@@ -23,8 +24,15 @@ export const H2 = styled.h2`
     line-height: 36px;
     letter-spacing: 0.05em;
     color:${({ theme }) => theme.colors.black};
-    margin-left: 34px;
     grid-column-end: span  3 ;
+    margin-inline: 5%;
+
+    ${({ second }) => second && css`
+    margin:0;
+    padding:0;
+    `}
+    
+    
     
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
     grid-column-end: span  2;

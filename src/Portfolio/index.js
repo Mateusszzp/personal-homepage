@@ -6,8 +6,8 @@ const Portfolio = () => {
 
     return (
         <Box>
-            <Cat />
-            <H2>
+            <Cat/>
+            <H2 second>
                 Portfolio
             </H2>
             <Projects> My recent projects</Projects>

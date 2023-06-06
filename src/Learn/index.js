@@ -7,7 +7,7 @@ const Learn = () => {
     <>
       <Section second>
         <H2>
-          What I want to learn next 🖥💪
+          What I want to learn next 💪
         </H2>
         <Li>TypeScript</Li>
         <Li>React Context</Li>
@@ -17,6 +17,7 @@ const Learn = () => {
         <Li>Graphql and rest api </Li>
       </Section>
     </>
+
   )
 };
 
