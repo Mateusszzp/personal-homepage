@@ -5,7 +5,7 @@ import { ReactComponent as toggle } from "../image/toggle.svg";
 
 export const Section = styled.section`
     display:grid;
-    grid-template-columns:repeat(2,auto);
+    grid-template-columns:repeat(2,1fr);
     grid-template-rows:  repeat(3fr auto);
     margin-top: 115px;
 
@@ -91,14 +91,11 @@ export const Toggle = styled(toggle)`
     height:40px;
     margin-inline:10px;
     transition:all 0.4s ;
- 
     position: absolute;
-   
-&:active{
-   transform: rotate(360deg);
-   translate: 100%;
-   }
-`;
+    margin-right: 6%;
+    margin-right: 1%;
+    
+   `;
 
 
 export const Span = styled.span`
