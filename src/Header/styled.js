@@ -84,6 +84,7 @@ export const Vector = styled(vector)`
     width: 98px;
     height: 47px;
     border: none;
+    position: relative;
    
   `;
 export const Toggle = styled(toggle)`
@@ -92,8 +93,10 @@ export const Toggle = styled(toggle)`
     margin-inline:10px;
     transition:all 0.4s ;
     position: absolute;
-    margin-right: 6%;
-    margin-right: 1%;
+    
+    align-self: flex-start;
+    justify-self: center;
+    align-items: flex-start;
     
    `;
 
