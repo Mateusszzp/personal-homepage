@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
-import { ReactComponent as vector } from "../image/vector.svg";
+import { ReactComponent as vector } from "../image/vectorBlack.svg";
 import { ReactComponent as toggle } from "../image/toggle.svg";
+import { ReactComponent as toggleBlack } from "../image/toggleBlack.svg";
 
 export const Section = styled.section`
     display:grid;
@@ -57,7 +58,7 @@ export const Image = styled(mateuszP)`
   }
 `;
 export const ChangeColor = styled.div`
-   cursor: pointer;
+   
     display:flex;
     align-items: center;
     justify-content: flex-end;
@@ -80,11 +81,17 @@ margin-right: 2%;
  
   
 `;
+
+export const BoxButton = styled.div`
+display: flex;
+cursor: pointer;
+`
 export const Vector = styled(vector)`
     width: 98px;
     height: 47px;
     border: none;
     position: relative;
+  
    
   `;
 export const Toggle = styled(toggle)`
@@ -93,12 +100,24 @@ export const Toggle = styled(toggle)`
     margin-inline:10px;
     transition:all 0.4s ;
     position: absolute;
+    overflow: auto;
     
-    align-self: flex-start;
-    justify-self: center;
-    align-items: flex-start;
-    
-   `;
+    align-self: center;
+  `;
+  export const ToggleBlack = styled(toggleBlack)`
+    width:40px;
+    height:40px;
+    margin-inline:10px;
+    transition:all 0.4s ;
+    position: absolute;
+    margin-left:48px;
+    align-self: center;
+  `
+
+  export const BlackBoxButton = styled.div`
+  background: black;
+  color:white;
+  ` 
 
 
 export const Span = styled.span`
