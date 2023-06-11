@@ -100,7 +100,7 @@ export const Toggle = styled(toggle)`
     margin-inline:10px;
     transition:all 0.4s ;
     position: absolute;
-    overflow: auto;
+   
     
     align-self: center;
   `;
