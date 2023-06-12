@@ -1,36 +1,27 @@
 
-import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle,  Vector, Wrapper } from "./styled";
-
-
-
-
-
-
-
+import { useState } from "react";
+import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle,  ToggleBlack,  Vector, Wrapper } from "./styled";
 
 
 const Header = () => {
     
-    
+    const [newStyle, setStyle ] = useState(true);
 
+    const HendlerStyling =  () => {
 
-      
-            
+        setStyle(ToggleStyle => !ToggleStyle ); 
         
-    
-    
+    };
 
-
-
-
-
+console.log(newStyle)
+            
 return (
     <Section >
-        <Image />
+        <Image  />
         <ChangeColor><DarkMode>Dark mode off</DarkMode>
-            <BoxButton > 
+            <BoxButton onClick={HendlerStyling}> 
                 <Vector />
-                <Toggle />
+             {newStyle ? <Toggle/> : <ToggleBlack/>}
             </BoxButton>
         </ChangeColor>
         <Wrapper>
@@ -38,7 +29,7 @@ return (
             <Title>Mateusz Paśko</Title>
             <Article>⚒⏳ Dopiero zaczynam moją kraierę z programowaniem i tak naprwande nie wiem co mnie czeka ale pozytywnie patrzę w przyszłość 😉</Article>
             <A href="mailto:mateusz.pasko.r@gmail.com"> ✉ Hire me </A>
-        </Wrapper>
+        </Wrapper> 
     </Section>
 )
 }

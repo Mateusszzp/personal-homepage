@@ -98,26 +98,36 @@ export const Toggle = styled(toggle)`
     width:40px;
     height:40px;
     margin-inline:10px;
-    transition:all 0.4s ;
+    transition:all 1s ;
     position: absolute;
-   
-    
     align-self: center;
+    
+    &:hover { 
+      transform:rotate(180deg);
+    }
   `;
-  export const ToggleBlack = styled(toggleBlack)`
+export const ToggleBlack = styled(toggleBlack)`
     width:40px;
     height:40px;
     margin-inline:10px;
-    transition:all 0.4s ;
+    transition:all 1s ;
     position: absolute;
-    margin-left:48px;
+    touch-action: auto;
     align-self: center;
+    translate: 100%;
+    
+    
+   
+  &:hover {
+    transform: rotate(180deg);
+    
+  }
   `
 
-  export const BlackBoxButton = styled.div`
+export const BlackBoxButton = styled.div`
   background: black;
   color:white;
-  ` 
+  `
 
 
 export const Span = styled.span`
