@@ -1,4 +1,4 @@
-import { H2, Li, Section } from "../Common/styled";
+import { H2, Li, Line, Section } from "../Common/styled";
 
 
 

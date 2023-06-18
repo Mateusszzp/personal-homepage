@@ -13,9 +13,7 @@ export const Section = styled.div`
  
  ${({ second }) => second && css`
     min-height:151px;
-   
-`}
-
+   `}
 `;
 
 export const H2 = styled.h2`

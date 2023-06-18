@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as mateuszP } from "../image/mateuszP.svg"
-import { ReactComponent as vector } from "../image/vectorBlack.svg";
+import { ReactComponent as vector } from "../image/vector.svg";
+import { ReactComponent as vectorBlack } from "../image/vectorBlack.svg";
 import { ReactComponent as toggle } from "../image/toggle.svg";
 import { ReactComponent as toggleBlack } from "../image/toggleBlack.svg";
 
@@ -92,8 +93,15 @@ export const Vector = styled(vector)`
     border: none;
     position: relative;
   
-   
+`;
+
+export const VectorBalck = styled(vectorBlack)`
+    width: 98px;
+    height: 47px;
+    border: none;
+    position: relative;
   `;
+
 export const Toggle = styled(toggle)`
     width:40px;
     height:40px;
@@ -117,19 +125,11 @@ export const ToggleBlack = styled(toggleBlack)`
     translate: 100%;
     
     
-   
-  &:hover {
-    transform: rotate(180deg);
+   &:hover {
+    transform: rotate(-180deg);
     
   }
-  `
-
-export const BlackBoxButton = styled.div`
-  background: black;
-  color:white;
-  `
-
-
+  `;
 export const Span = styled.span`
     font-size: 12px;
     color:${({ theme }) => theme.colors.slateGray};

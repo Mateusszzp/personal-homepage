@@ -1,36 +1,34 @@
 
 import { useState } from "react";
-import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle,  ToggleBlack,  Vector, Wrapper } from "./styled";
+import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle, ToggleBlack, Vector, VectorBalck, Wrapper } from "./styled";
 
 
 const Header = () => {
-    
-    const [newStyle, setStyle ] = useState(true);
 
-    const HendlerStyling =  () => {
+    const [newStyle, setStyle] = useState(true);
 
-        setStyle(ToggleStyle => !ToggleStyle ); 
-        
+    const HendlerStyling = () => {
+        setStyle(ToggleStyle => !ToggleStyle);
     };
 
-console.log(newStyle)
-            
-return (
-    <Section >
-        <Image  />
-        <ChangeColor><DarkMode>Dark mode off</DarkMode>
-            <BoxButton onClick={HendlerStyling}> 
-                <Vector />
-             {newStyle ? <Toggle/> : <ToggleBlack/>}
-            </BoxButton>
-        </ChangeColor>
-        <Wrapper>
-            <Span>This is</Span>
-            <Title>Mateusz Paśko</Title>
-            <Article>⚒⏳ Dopiero zaczynam moją kraierę z programowaniem i tak naprwande nie wiem co mnie czeka ale pozytywnie patrzę w przyszłość 😉</Article>
-            <A href="mailto:mateusz.pasko.r@gmail.com"> ✉ Hire me </A>
-        </Wrapper> 
-    </Section>
-)
+    console.log(newStyle)
+
+    return (
+        <Section >
+            <Image />
+            <ChangeColor><DarkMode>Dark mode off</DarkMode>
+                <BoxButton onClick={HendlerStyling}>
+                    {newStyle ? <Vector /> : <VectorBalck />}
+                    {newStyle ? <Toggle /> : <ToggleBlack />}
+                </BoxButton>
+            </ChangeColor>
+            <Wrapper>
+                <Span>This is</Span>
+                <Title>Mateusz Paśko</Title>
+                <Article>⚒⏳ Dopiero zaczynam moją kraierę z programowaniem i tak naprwande nie wiem co mnie czeka ale pozytywnie patrzę w przyszłość 😉</Article>
+                <A href="mailto:mateusz.pasko.r@gmail.com"> ✉ Hire me </A>
+            </Wrapper>
+        </Section>
+    )
 }
 export default Header;
