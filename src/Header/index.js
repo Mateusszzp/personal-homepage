@@ -1,8 +1,8 @@
 
 import { useState } from "react";
 import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle, ToggleBlack, Vector, VectorBalck, Wrapper } from "./styled";
-
-
+import { fetchChangeLighte } from "../changeLighteSlice";
+ console.log(fetchChangeLighte())
 const Header = () => {
 
     const [newStyle, setStyle] = useState(true);
