@@ -2,14 +2,18 @@
 import { useState } from "react";
 import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle, ToggleBlack, Vector, VectorBalck, Wrapper } from "./styled";
 import { fetchChangeLighte } from "../changeLighteSlice";
+import { useDispatch } from "react-redux";
  console.log(fetchChangeLighte())
 const Header = () => {
+//const dispatch = useDispatch();
+
 
     const [newStyle, setStyle] = useState(true);
 
     const HendlerStyling = () => {
         setStyle(ToggleStyle => !ToggleStyle);
     };
+
 
     console.log(newStyle)
 

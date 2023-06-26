@@ -9,7 +9,7 @@ const changeLighteSlice = createSlice({
 
     reducers: {
         fetchChangeLighte: state => {
-            state.changeLighte = !state.changeLighte
+            state.status = !state.status
            
         }
     }
@@ -20,6 +20,7 @@ export const {
 } = changeLighteSlice.actions;
 
 export const selectChangeLighte = state => state.status.changeLighte;
+//export const selectChangeLighteN = state => selectChangeLighte(state).status
 
 
 export default changeLighteSlice.reducer;
