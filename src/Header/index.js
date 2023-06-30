@@ -1,29 +1,22 @@
 
 import { useState } from "react";
 import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle, ToggleBlack, Vector, VectorBalck, Wrapper } from "./styled";
-import { fetchChangeLighte } from "../changeLighteSlice";
-import { useDispatch } from "react-redux";
- console.log(fetchChangeLighte())
+import { fetchChangeLighte, selectChangeLighte } from "../changeLighteSlice";
+import { useDispatch, useSelector } from "react-redux";
+
 const Header = () => {
-//const dispatch = useDispatch();
 
-
-    const [newStyle, setStyle] = useState(true);
-
-    const HendlerStyling = () => {
-        setStyle(ToggleStyle => !ToggleStyle);
-    };
-
-
-    console.log(newStyle)
+    const dispatch = useDispatch();
+    const changeLighte = useSelector(selectChangeLighte);
+    console.log(changeLighte)
 
     return (
         <Section >
             <Image />
             <ChangeColor><DarkMode>Dark mode off</DarkMode>
-                <BoxButton onClick={HendlerStyling}>
-                    {newStyle ? <Vector /> : <VectorBalck />}
-                    {newStyle ? <Toggle /> : <ToggleBlack />}
+                <BoxButton onClick={() => dispatch(fetchChangeLighte())}>
+                    {changeLighte ? <Vector /> : <VectorBalck />}
+                    {changeLighte ? <Toggle /> : <ToggleBlack />}
                 </BoxButton>
             </ChangeColor>
             <Wrapper>

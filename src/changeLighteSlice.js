@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const changeLighteSlice = createSlice({
-    name: "changeLighte",
+    name: 'changeLighte',
     initialState: {
         status: false,
     },
@@ -19,8 +19,8 @@ export const {
     fetchChangeLighte,
 } = changeLighteSlice.actions;
 
-export const selectChangeLighte = state => state.status.changeLighte;
-//export const selectChangeLighteN = state => selectChangeLighte(state).status
+const selectChangeLighteState = state => state.changeLighteSlice;
 
+export const selectChangeLighte = state => selectChangeLighteState(state).status;
 
 export default changeLighteSlice.reducer;
