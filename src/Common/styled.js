@@ -11,7 +11,7 @@ export const Section = styled.div`
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); // tu mieliśmy auto potrzebna responsywność 
  
- ${({ second }) => second && css`
+  ${({ second }) => second && css`
     min-height:151px;
    `}
 `;
@@ -25,12 +25,10 @@ export const H2 = styled.h2`
     grid-column-end: span  3 ;
     margin-inline: 5%;
 
-    ${({ second }) => second && css`
+  ${({ second }) => second && css`
     margin:0;
     padding:0;
     `}
-    
-    
     
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
     grid-column-end: span  2;
@@ -55,9 +53,7 @@ export const Li = styled.li`
     list-style-image: url(${circle});
     padding-bottom: 5%;
    
-    
-
-    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
+@media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 14px;
     line-height: 17px;
     }
