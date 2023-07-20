@@ -8,7 +8,7 @@ const Header = () => {
 
     const dispatch = useDispatch();
     const changeLighte = useSelector(selectChangeLighte);
-    console.log(changeLighte)
+
 
     return (
         <Section >
