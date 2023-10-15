@@ -4,10 +4,6 @@ import Learn from "./Learn";
 import MySkills from "./MySkills";
 import Portfolio from "./Portfolio";
 
-
-
-
-
 function App() {
   return (
     <Container>
@@ -19,8 +15,5 @@ function App() {
   
   )
 };
-
-
-  
 
 export default App;
