@@ -7,7 +7,7 @@ import { ThemeProvider } from "styled-components";
 import { theme, themeBlack } from "./theme"
 import { Provider } from 'react-redux';
 import store from './store';
-
+import  ChangeColorFunction  from './Common/ChangeColor';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
