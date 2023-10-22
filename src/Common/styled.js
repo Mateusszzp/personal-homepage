@@ -1,15 +1,7 @@
 import styled, { css } from "styled-components";
 import circle from "../image/circle.svg"
-import { useSelector } from "react-redux";
-import { selectChangeLighte } from "../changeLighteSlice";
-
-
-
-
 
 export const Section = styled.div`
-
-    background: ${({ theme }) => theme.colors.white} ;
     margin-top: 63px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;

@@ -1,20 +1,22 @@
 import { useSelector } from "react-redux";
 import { H2, Li, Line, Section, Section2 } from "../Common/styled";
 import { selectChangeLighte } from "../changeLighteSlice";
+import { theme } from "../theme"
 
 
 
 
 const MySkills = () => {
+    const lightMode = useSelector(selectChangeLighte)
 
 
     return (
         <>
-            <Section>
-                <H2>
+            <Section style={{ backgroundColor: lightMode ? theme.colors.white : theme.colors.orange }}>
+                <H2 style={{color:lightMode ? theme.colors.black : theme.colors.white}}>
                     My skillset includes 🛠📂
                 </H2>
-                <Li>Semantic & accessible HTML</Li>
+                <Li style={{color:lightMode ? theme.colors.black : theme.colors.white}}>Semantic & accessible HTML</Li>
                 <Li>Responsive Web Design</Li>
                 <Li>Teamwork</Li>
                 <Li>Immutability</Li>

@@ -1,9 +1,11 @@
+import { useDispatch, useSelector } from "react-redux";
+import { fetchChangeLighte, selectChangeLighte } from "../../changeLighteSlice";
+import { useEffect } from "react";
+import { theme, themeBlack } from "../../theme"
 
 
-//  const ChangeColorFunction = ({theme, themeBlack}) => {
-//     theme ? themeBlack : theme
+ 
 
-// }
-// console.log(ChangeColorFunction())
 
-// export default ChangeColorFunction
+
+

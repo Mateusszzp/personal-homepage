@@ -4,13 +4,16 @@ import { createSlice } from '@reduxjs/toolkit';
 const changeLighteSlice = createSlice({
     name: 'changeLighte',
     initialState: {
-        status: false,
+        status: true,
+        color: "theme",
     },
 
     reducers: {
         fetchChangeLighte: state => {
-            state.status = !state.status
-           
+          state.status= !state.status 
+        },
+        fetchchangeColor: state => {
+            state.color = "themeBlack" 
         }
     }
 });

@@ -4,7 +4,7 @@ import { ReactComponent as vector } from "../image/vector.svg";
 import { ReactComponent as vectorBlack } from "../image/vectorBlack.svg";
 import { ReactComponent as toggle } from "../image/toggle.svg";
 import { ReactComponent as toggleBlack } from "../image/toggleBlack.svg";
-
+import { useSelector } from "react-redux";
 export const Section = styled.section`
     display:grid;
     grid-template-columns:repeat(2,1fr);

@@ -13,7 +13,7 @@ html {
    }
 
   body{
-    background:${({ theme }) => theme.colors.lilic};
+    background:${({ theme }) => theme.colors.nav};
     font-family:'Inter', serif ;
   }
 `;
