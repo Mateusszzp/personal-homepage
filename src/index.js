@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GlobalStyle } from './GlobalStyle';
-import { ThemeProvider } from "styled-components";
-import { theme, themeBlack } from "./theme"
-import { Provider, useDispatch, useSelector } from 'react-redux';
+import { Provider, } from 'react-redux';
 import store from './store';
-import { ChangeColorFunction, ChangeLighte } from './Common/ChangeColor';
-import changeLighteSlice, { selectChangeLighte } from './changeLighteSlice';
+import {ChangeColor} from './Common/ChangeColor';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,10 +14,7 @@ root.render(
 
   <React.StrictMode>
     <Provider store={store}>
-      <ThemeProvider theme={theme} >
-        <GlobalStyle/>
-        <App/>
-        </ThemeProvider>
+      <ChangeColor/>
     </Provider>
   </React.StrictMode>
 );

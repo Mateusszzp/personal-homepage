@@ -2,6 +2,8 @@ import styled, { css } from "styled-components";
 import circle from "../image/circle.svg"
 
 export const Section = styled.div`
+    color:${({ theme }) => theme.colors.universal} ;
+    background-color: ${({ theme }) => theme.colors.universal};
     margin-top: 63px;
     box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
     border-radius: 4px;
@@ -15,10 +17,6 @@ export const Section = styled.div`
   ${({ second }) => second && css`
     min-height:151px;
    `}
-
-${({changeColor}) => changeColor && css`
-   background:black;
-   `}
 `;
 
 export const H2 = styled.h2`
@@ -26,7 +24,7 @@ export const H2 = styled.h2`
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.05em;
-    color:${({ theme }) => theme.colors.black};
+    color:${({ theme }) => theme.colors.heading};
     grid-column-end: span  3 ;
     margin-inline: 5%;
 
@@ -53,7 +51,7 @@ export const Li = styled.li`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    color:${({ theme }) => theme.colors.slateGray};
+    color:${({ theme }) => theme.colors.text};
     display: list-item;
     list-style-image: url(${circle});
     padding-bottom: 5%;

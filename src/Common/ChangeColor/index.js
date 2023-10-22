@@ -1,11 +1,20 @@
-import { useDispatch, useSelector } from "react-redux";
-import { fetchChangeLighte, selectChangeLighte } from "../../changeLighteSlice";
-import { useEffect } from "react";
+import {  useSelector } from "react-redux";
+import {  selectChangeLighte } from "../../changeLighteSlice";
+
 import { theme, themeBlack } from "../../theme"
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "../../GlobalStyle";
+import App from "../../App";
 
 
- 
-
-
+export const ChangeColor = () => {
+    const lightMode = useSelector(selectChangeLighte);
+    return (
+        <ThemeProvider theme={lightMode ? theme : themeBlack} >
+            <GlobalStyle />
+            <App />
+        </ThemeProvider>
+    )
+};
 
 

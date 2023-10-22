@@ -6,14 +6,12 @@ const Portfolio = () => {
 
     return (
         <Box>
-            <Cat/>
+            <Cat />
             <H2 second>
                 Portfolio
             </H2>
             <Projects> My recent projects</Projects>
         </Box>
-
-
     )
-}
+};
 export default Portfolio;

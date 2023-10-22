@@ -4,8 +4,9 @@ import { ReactComponent as vector } from "../image/vector.svg";
 import { ReactComponent as vectorBlack } from "../image/vectorBlack.svg";
 import { ReactComponent as toggle } from "../image/toggle.svg";
 import { ReactComponent as toggleBlack } from "../image/toggleBlack.svg";
-import { useSelector } from "react-redux";
+
 export const Section = styled.section`
+    background-color: ${({theme}) => theme.colors.universal};
     display:grid;
     grid-template-columns:repeat(2,1fr);
     grid-template-rows:  repeat(3fr auto);
@@ -59,7 +60,6 @@ export const Image = styled(mateuszP)`
   }
 `;
 export const ChangeColor = styled.div`
-   
     display:flex;
     align-items: center;
     justify-content: flex-end;
@@ -78,10 +78,8 @@ export const ChangeColor = styled.div`
   }
 `;
 export const DarkMode = styled.span`
-margin-right: 2%;
- 
-  
-`;
+    margin-right: 2%;
+ `;
 
 export const BoxButton = styled.div`
 display: flex;
@@ -92,7 +90,6 @@ export const Vector = styled(vector)`
     height: 47px;
     border: none;
     position: relative;
-  
 `;
 
 export const VectorBalck = styled(vectorBlack)`
@@ -132,7 +129,7 @@ export const ToggleBlack = styled(toggleBlack)`
   `;
 export const Span = styled.span`
     font-size: 12px;
-    color:${({ theme }) => theme.colors.slateGray};
+    color:${({ theme }) => theme.colors.text};
     text-transform: uppercase;
     font-weight: 700;
 
@@ -141,7 +138,7 @@ export const Span = styled.span`
 
 export const Title = styled.h1`
     font-size: 38px;
-    color:${({ theme }) => theme.colors.black};
+    color:${({ theme }) => theme.colors.heading};
     font-weight: 900;
     margin:12px 0 35px ;
 
@@ -155,7 +152,7 @@ export const Title = styled.h1`
 export const Article = styled.article`
     font-size: 20px;
     line-height: 140%;
-    color:${({ theme }) => theme.colors.slateGray};
+    color:${({ theme }) => theme.colors.text};
     letter-spacing: 0.05em;
 
     @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
@@ -167,8 +164,8 @@ export const Article = styled.article`
 `;
 
 export const A = styled.a`
-    background:${({ theme }) => theme.colors.scienceBlue};
-    color:${({ theme }) => theme.colors.white};
+    background:${({ theme }) => theme.colors.post};
+    color:${({ theme }) => theme.colors.universal};
     text-decoration: none;
     height: 49px;
     width: 154px;
