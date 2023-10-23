@@ -3,14 +3,10 @@ import Header from "./Header";
 import Learn from "./Learn";
 import MySkills from "./MySkills";
 import Portfolio from "./Portfolio";
-import { Container,  } from "./Container/styled";
-import { useSelector } from "react-redux";
-import { selectChangeLighte } from "./changeLighteSlice";
+import { Container, } from "./Container/styled";
+import { Tile } from "./Tile";
 
 function App() {
-  const lightMode = useSelector(selectChangeLighte);
-
-
   return (
 
     <Container>
@@ -19,6 +15,7 @@ function App() {
         <MySkills />
         <Learn />
         <Portfolio />
+        <Tile />
       </SectionCenter>
     </Container>
 

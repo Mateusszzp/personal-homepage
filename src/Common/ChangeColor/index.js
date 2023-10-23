@@ -1,6 +1,5 @@
 import {  useSelector } from "react-redux";
 import {  selectChangeLighte } from "../../changeLighteSlice";
-
 import { theme, themeBlack } from "../../theme"
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../../GlobalStyle";
