@@ -7,8 +7,8 @@ export const theme = {
         heading: "#252525",//nagłówki 
         text: "#6E7E91",// cały text
         post: "#0366D6",// poczta
-        universal: "#FFFFFF",//text i tło
-       
+        universal: "#FFFFFF",//text,tło, kafelka
+        project: "#0366D6",// nazwy projektów 
     },
     breakpoints: {
         full: 1500,
@@ -25,7 +25,7 @@ export const themeBlack = {
         text: "#FFFAF0",
         post: "#0366D6",
         universal: "#000000",
-        
+
     },
     breakpoints: {
         full: 1500,

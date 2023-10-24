@@ -1,11 +1,19 @@
-import { Til } from "./styled"
+import { ProjectName, Til } from "./styled"
 
 
 export const Tile = () => {
-   return (
-   <>
-        <Til>
-            fkjsofsjdofjsdofdsoifjsdfogsjdoigfdsoa
-        </Til>
+  return (
+    <>
+
+      <Til>
+        <ProjectName>
+          Movies Browser
+        </ProjectName>
+        <p>
+          Opis projektu
+        </p>
+        <p> Demo:
+        </p>Code:
+      </Til>
     </>)
 };
