@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-
+// utworzyć grida 2 
+// stworzyć plik json
+// funkcja asynchoniczna 
+// dodać louder
 export const Til = styled.div`
     background-color:${({ theme })=> theme.colors.universal};
     padding:50px;
