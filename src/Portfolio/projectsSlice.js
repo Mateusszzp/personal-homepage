@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const projectsSlice = createSlice({
     name: "projects",
     initialState: {
-        loading: true,
+        status: "loading",
+        projects: true
     },
     reducers: {
 
@@ -11,11 +12,24 @@ const projectsSlice = createSlice({
             state.projects = projects
             state.loading = true
         },
+       
         fetchProjects: (projects) => {
             projects.loading = false
         },
         removeLoadingState: (state) => {
             state.loading = true
+        },
+        setProject: (state, { payload: projects }) => {
+            state.projects = projects
+        },
+        fetchLoading: (state) => {
+            state.status = "loading"
+        },
+        fetchSucces: (state) => {
+            state.status = "success"
+        },
+        fetchError: (state) => {
+            state.status = "error"
         },
     }
 });
@@ -23,7 +37,10 @@ const projectsSlice = createSlice({
 export const {
     setPojects,
     fetchProjects,
-    removeLoadingState
+    removeLoadingState,
+    fetchLoading,
+    fetchSucces,
+    fetchError,
 } = projectsSlice.actions;
 
 const selectProjectsState = state => state.projects;

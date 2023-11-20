@@ -9,6 +9,7 @@ const store = configureStore({
     reducer: {
         changeLighteSlice: changeLighteSliceReducer,
         projects:projectsReducer,
+        
     },
     middleware: [sagaMiddleware],
 });

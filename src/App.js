@@ -4,7 +4,7 @@ import Learn from "./Learn";
 import MySkills from "./MySkills";
 import Portfolio from "./Portfolio";
 import { Container, } from "./Container/styled";
-import { Tile } from "./Tile";
+import  Tile  from "./Tile";
 
 function App() {
   return (

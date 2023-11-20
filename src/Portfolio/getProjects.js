@@ -1,8 +1,13 @@
-export const getProjects = async () => {
-    const response = await fetch("/personal-homepage/myProjects.json")
 
+export const getProjects = async () => {
+    const response = await fetch('personal-homepage/myProjects.json')
+    console.log(response)
+    
     if (!response.ok) {
-        new Error(response.statusText)
+       throw new Error(response.statusText);
+        
     }
+    console.log("co jest")
+    
     return await response.json();
 }
