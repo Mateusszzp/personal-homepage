@@ -6,7 +6,7 @@ import styled from "styled-components";
 // dodać louder
 export const Til = styled.div`
     background-color:${({ theme })=> theme.colors.universal};
-    padding:50px;
+    padding:100px;
     max-width: 592px;
     max-height: 322px;
     color:${({ theme }) => theme.colors.text};
@@ -19,5 +19,14 @@ export const ProjectName = styled.h3`
     height: 29.05px;
     
 `;
-
+export const Button = styled.button`
+min-width: 20px;
+color: green;
+padding: 35px;
+font-size: 20px;
+`;
+export const Box = styled.div`
+min-width: 25%;
+border: black 5px;
+`;
 
