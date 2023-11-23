@@ -7,16 +7,16 @@
         "id": 1
     },
     {
-        "name": "to-do-list",
+        "name": "todo-list-react",
         "discryption": "A simple application for listing tasks, marking their completion and modification.",
-        "demo": "https://mateusszzp.github.io/To-do-list/",
-        "code": "https://github.com/Mateusszzp/To-do-list",
+        "demo": "https://mateusszzp.github.io/todo-list-react/",
+        "code": "https://github.com/Mateusszzp/todo-list-react",
         "id": 2
     },
     {
         "name": "movie-browser",
         "discryption": "This Movie Browser was created as the final project of the Frontend Developer Course at Youcode course as a result of our teamwork. Design was based on Figma graphic and API data provided by the (https://www.themoviedb.org/). Site will allow you to use the database of movies and people provided by external API to get acquainted with trending movies, details and people involved in their creation.",
-        "demo:": "https://kubatuta.github.io/Movie-Browser/",
+        "demo": "https://kubatuta.github.io/Movie-Browser/",
         "code": "https://github.com/Mateusszzp/Movie-Browser",
         "id": 3
     },
