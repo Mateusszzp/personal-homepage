@@ -13,12 +13,13 @@ export const Section = styled.section`
     margin-top: 115px;
 
   @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
-    max-width: 80vw;
+    /* max-width: 80vw; */
+    margin-inline: 20px;
     
 }
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
     grid-template-columns:1fr;
-    margin:auto;
+    margin-inline: 20px;
 }`;
 
 export const Wrapper = styled.div`
@@ -77,7 +78,7 @@ export const ChangeColor = styled.div`
   
   }
 `;
-export const DarkMode = styled.span`
+export const DarkModeText = styled.span`
     margin-right: 2%;
  `;
 
@@ -107,9 +108,7 @@ export const Toggle = styled(toggle)`
     position: absolute;
     align-self: center;
     
-    &:hover { 
-      transform:rotate(180deg);
-    }
+    
   `;
 export const ToggleBlack = styled(toggleBlack)`
     width:40px;
@@ -122,10 +121,7 @@ export const ToggleBlack = styled(toggleBlack)`
     translate: 100%;
     
     
-   &:hover {
-    transform: rotate(-180deg);
-    
-  }
+   
   `;
 export const Span = styled.span`
     font-size: 12px;
@@ -178,7 +174,12 @@ export const A = styled.a`
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     margin-top:24px;
     margin-bottom: 46px;
+    
   }
+  @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+    margin-top:24px;
+    margin-bottom: 46px;
+}
 `;
 
 /* Vector */

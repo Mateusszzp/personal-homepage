@@ -1,4 +1,4 @@
-import { A, Article, BoxButton, ChangeColor, DarkMode, Image, Section, Span, Title, Toggle, ToggleBlack, Vector, VectorBalck, Wrapper } from "./styled";
+import { A, Article, BoxButton, ChangeColor, DarkModeText, Image, Section, Span, Title, Toggle, ToggleBlack, Vector, VectorBalck, Wrapper } from "./styled";
 import { fetchChangeLighte, selectChangeLighte } from "../changeLighteSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Section >
       <Image />
-      <ChangeColor><DarkMode>Dark mode off</DarkMode>
+      <ChangeColor><DarkModeText>Dark mode off</DarkModeText>
         <BoxButton onClick={() => dispatch(fetchChangeLighte())}>
           {changeLighte ? <Vector /> : <VectorBalck />}
           {changeLighte ? <Toggle /> : <ToggleBlack />}

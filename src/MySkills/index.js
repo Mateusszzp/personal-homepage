@@ -1,10 +1,9 @@
-import { useSelector } from "react-redux";
 import { H2, Li, Section } from "../Common/styled";
-import { selectChangeLighte } from "../changeLighteSlice";
+
 
 
 const MySkills = () => {
-  const lightMode = useSelector(selectChangeLighte)
+ 
 
   return (
     <>

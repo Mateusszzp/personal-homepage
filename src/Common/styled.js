@@ -16,7 +16,12 @@ export const Section = styled.div`
  
   ${({ second }) => second && css`
     min-height:151px;
-   `}
+    `}
+    @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
+    /* max-width: 80vw; */
+    margin-inline: 20px;
+    
+}
 `;
 
 export const H2 = styled.h2`
@@ -27,6 +32,7 @@ export const H2 = styled.h2`
     color:${({ theme }) => theme.colors.heading};
     grid-column-end: span  3 ;
     margin-inline: 5%;
+    display: block;
 
   ${({ second }) => second && css`
     margin:0;
@@ -34,10 +40,10 @@ export const H2 = styled.h2`
     `}
     
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
-    grid-column-end: span  2;
+   font-size:celc;
 }
 @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
-    grid-column-end: span  1;
+   
 }
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 18px;
