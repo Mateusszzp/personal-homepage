@@ -40,7 +40,7 @@ export const H2 = styled.h2`
     `}
     
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
-   font-size:celc;
+   font-size:calc(3vw + 2px);
 }
 @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
    

@@ -6,7 +6,7 @@ import { ReactComponent as toggle } from "../image/toggle.svg";
 import { ReactComponent as toggleBlack } from "../image/toggleBlack.svg";
 
 export const Section = styled.section`
-    background-color: ${({theme}) => theme.colors.universal};
+    background-color: ${({ theme }) => theme.colors.universal};
     display:grid;
     grid-template-columns:repeat(2,1fr);
     grid-template-rows:  repeat(3fr auto);
@@ -137,6 +137,10 @@ export const Title = styled.h1`
     color:${({ theme }) => theme.colors.heading};
     font-weight: 900;
     margin:12px 0 35px ;
+
+  @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+    font-size: calc(4vw + 2px);
+  }
 
   @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     margin-top:8px;
