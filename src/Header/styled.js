@@ -11,6 +11,7 @@ export const Section = styled.section`
     grid-template-columns:repeat(2,1fr);
     grid-template-rows:  repeat(3fr auto);
     margin-top: 115px;
+    /* place-items: center; */
 
   @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
     /* max-width: 80vw; */
@@ -41,8 +42,9 @@ export const Image = styled(mateuszP)`
     width: 398px ;
     height: 398px ;
     border-radius:100%;
-    border:1px solid;
+    border:5px inset;
     grid-row-end:span 3;
+    background: white;
     
     @media (max-width:${({ theme }) => theme.breakpoints.full}px){
       margin-left: 20px;
@@ -64,7 +66,7 @@ export const ChangeColor = styled.div`
     display:flex;
     align-items: center;
     justify-content: flex-end;
-   
+  
    
   @media (max-width:${({ theme }) => theme.breakpoints.medium}px) {
     grid-row-start:1;
@@ -80,45 +82,48 @@ export const ChangeColor = styled.div`
 `;
 export const DarkModeText = styled.span`
     margin-right: 2%;
+    margin-top:calc(3vw);
+    color:${({ theme }) => theme.colors.text};
  `;
 
 export const BoxButton = styled.div`
 display: flex;
 cursor: pointer;
+margin-top:calc(3vw);
+margin-right:calc(3vw - 2px);
+
 `
 export const Vector = styled(vector)`
     width: 98px;
-    height: 47px;
+    height:38px;
     border: none;
     position: relative;
+    
 `;
 
 export const VectorBalck = styled(vectorBlack)`
     width: 98px;
-    height: 47px;
+    height: 38px;
     border: none;
     position: relative;
   `;
 
 export const Toggle = styled(toggle)`
-    width:40px;
+    width:30px;
     height:40px;
-    margin-inline:10px;
-    transition:all 1s ;
+    margin-inline:16px;
     position: absolute;
     align-self: center;
     
     
   `;
 export const ToggleBlack = styled(toggleBlack)`
-    width:40px;
+    width:30px;
     height:40px;
-    margin-inline:10px;
-    transition:all 1s ;
+    margin-inline:50px;
     position: absolute;
-    touch-action: auto;
     align-self: center;
-    translate: 100%;
+    
     
     
    
