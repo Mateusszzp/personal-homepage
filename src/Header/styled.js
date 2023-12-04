@@ -45,7 +45,7 @@ export const Image = styled(mateuszP)`
     border:5px inset;
     grid-row-end:span 3;
     background: white;
-    
+    margin:calc(3%);
     @media (max-width:${({ theme }) => theme.breakpoints.full}px){
       margin-left: 20px;
     }
@@ -84,6 +84,13 @@ export const DarkModeText = styled.span`
     margin-right: 2%;
     margin-top:calc(3vw);
     color:${({ theme }) => theme.colors.text};
+    
+  @media (max-width:${({ theme }) => theme.breakpoints.small}px){
+   color: transparent;
+  };
+    
+
+
  `;
 
 export const BoxButton = styled.div`
@@ -159,6 +166,7 @@ export const Article = styled.article`
     line-height: 140%;
     color:${({ theme }) => theme.colors.text};
     letter-spacing: 0.05em;
+    margin-right: calc(3vw);
 
     @media (max-width:${({ theme }) => theme.breakpoints.small}px) {
       margin-top:0 ;

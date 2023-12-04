@@ -11,17 +11,15 @@ export const Section = styled.div`
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    
+   
     // tu mieliśmy auto potrzebna responsywność 
  
   ${({ second }) => second && css`
     min-height:151px;
     `}
     @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
-    /* max-width: 80vw; */
-    margin-inline: 20px;
-    
-}
+    margin-inline:10px;
+    }
 `;
 
 export const H2 = styled.h2`
@@ -61,6 +59,11 @@ export const Li = styled.li`
     display: list-item;
     list-style-image: url(${circle});
     padding-bottom: 5%;
+
+    :hover{
+        color: red;
+        cursor:pointer;
+    }
    
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 14px;
