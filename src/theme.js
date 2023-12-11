@@ -9,6 +9,7 @@ export const theme = {
         post: "#0366D6",// poczta
         universal: "#FFFFFF",//text,tło, kafelka
         project: "#0366D6",// nazwy projektów 
+        link: "#ff0000",// linki, hover 
     },
     breakpoints: {
         full: 1500,
@@ -25,6 +26,7 @@ export const themeBlack = {
         text: "#FFFAF0",
         post: "#0366D6",
         universal: "#000000",
+        link: "#ff0000",
 
     },
     breakpoints: {

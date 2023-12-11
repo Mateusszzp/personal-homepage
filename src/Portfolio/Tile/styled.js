@@ -51,7 +51,14 @@ export const Code = styled.p`
     color:${({ theme }) => theme.colors.text};
 `;
 export const A = styled.a`
-  color:${({ theme }) => theme.colors.project};
+    color:${({ theme }) => theme.colors.project};
+
+  :hover{
+    color:${({ theme }) => theme.colors.link};
+}
+  :visited{
+    color:none;
+  }
 `;
 
 
