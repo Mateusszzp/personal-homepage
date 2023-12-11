@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <Section >
       <Image />
-      <ChangeColor><DarkModeText>Dark mode off</DarkModeText>
+      <ChangeColor><DarkModeText>Dark mode {changeLighte ? "on" : "off"}</DarkModeText>
         <BoxButton onClick={() => dispatch(fetchChangeLighte())}>
           {changeLighte ? <Vector /> : <VectorBalck />}
           {changeLighte ? <Toggle /> : <ToggleBlack />}
