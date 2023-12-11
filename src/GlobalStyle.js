@@ -14,5 +14,5 @@ html {
   body{
     background:${({ theme }) => theme.colors.nav};
     font-family:'Inter', serif ;
-  }
+    }
 `;

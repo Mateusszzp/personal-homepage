@@ -15,12 +15,11 @@ export const Section = styled.section`
 
   @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
     /* max-width: 80vw; */
-    margin-inline: 20px;
     
 }
 @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
     grid-template-columns:1fr;
-    margin-inline: 20px;
+    
 }`;
 
 export const Wrapper = styled.div`

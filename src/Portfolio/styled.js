@@ -19,6 +19,7 @@ export const Projects = styled.span`
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
+    margin-bottom: 15px;
 `;
 
 

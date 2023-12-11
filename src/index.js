@@ -3,18 +3,16 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { Provider, } from 'react-redux';
 import store from './store';
-import {ChangeColor} from './Common/ChangeColor';
+import { ChangeColor } from './Common/ChangeColor';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-
-
   <React.StrictMode>
     <Provider store={store}>
-      <ChangeColor/>
+      <ChangeColor />
     </Provider>
   </React.StrictMode>
 );

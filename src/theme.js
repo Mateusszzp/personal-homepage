@@ -32,5 +32,6 @@ export const themeBlack = {
         medium: 954,
         small: 758,
         mobile: 554,
+        tile: 819,
     }
 }

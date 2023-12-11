@@ -12,13 +12,13 @@ export const Section = styled.div`
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
    
-    // tu mieliśmy auto potrzebna responsywność 
+   
  
   ${({ second }) => second && css`
     min-height:151px;
     `}
     @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
-    margin-inline:10px;
+    
     }
 `;
 
@@ -63,7 +63,7 @@ export const Li = styled.li`
     :hover{
         color: red;
         cursor:pointer;
-    }
+    };
    
 @media (max-width:${({ theme }) => theme.breakpoints.mobile}px) {
     font-size: 14px;

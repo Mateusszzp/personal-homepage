@@ -1,4 +1,4 @@
-import { SectionCenter } from "./SectionCenter/styled";
+import { SectionCenter } from "./Container/SectionCenter/styled";
 import Header from "./Header";
 import Learn from "./Learn";
 import MySkills from "./MySkills";
