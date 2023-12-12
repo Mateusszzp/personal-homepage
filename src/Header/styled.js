@@ -11,13 +11,8 @@ export const Section = styled.section`
     grid-template-columns:repeat(2,1fr);
     grid-template-rows:  repeat(3fr auto);
     margin-top: 115px;
-    /* place-items: center; */
-
-  @media (max-width:${({ theme }) => theme.breakpoints.full}px) {
-    /* max-width: 80vw; */
-    
-}
-@media (max-width:${({ theme }) => theme.breakpoints.medium}px){
+   
+   @media (max-width:${({ theme }) => theme.breakpoints.medium}px){
     grid-template-columns:1fr;
     
 }`;
@@ -198,7 +193,7 @@ export const A = styled.a`
 }
 `;
 
-/* Vector */
+
 
 
 

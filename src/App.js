@@ -5,6 +5,7 @@ import MySkills from "./MySkills";
 import Portfolio from "./Portfolio";
 import { Container, } from "./Container/styled";
 import  Tile  from "./Portfolio/Tile";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Learn />
         <Portfolio />
         <Tile />
+        <Footer/>
       </SectionCenter>
     </Container>
 

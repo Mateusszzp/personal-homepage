@@ -32,7 +32,7 @@ const Tile = () => {
               Demo:&nbsp;<A href={project.demo}>https://link.demo.com</A>
             </Code>
             <Code>
-              Code:&nbsp;<A href={project.code}>https://link.code.com</A>
+              Code:&nbsp;<A href={project.code}>&nbsp;https://link.code.com</A>
             </Code>
           </BoxInside>
         </Til>
