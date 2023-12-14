@@ -22,7 +22,7 @@ const Tile = () => {
       {projects.map(project => (
         <Til key={project.id}>
           <BoxInside>
-            <ProjectName >
+            <ProjectName href={project.demo}>
               {project.name}
             </ProjectName>
             <Description>

@@ -31,10 +31,18 @@ export const BoxInside = styled.div`
   
 `;
 
-export const ProjectName = styled.h3`
+export const ProjectName = styled.a`
     font-size: 24px;
+    font-weight: 700;
     color: ${({ theme }) => theme.colors.project};
     height: 29.05px;
+    cursor: pointer;
+    text-decoration: none;
+  :hover {
+        filter:brightness(120%);
+    }
+  
+   
 
 `;
 export const Description = styled.article`
@@ -42,6 +50,9 @@ export const Description = styled.article`
     line-height: 25,2px;
     letter-spacing: 5%;
     color:${({ theme }) => theme.colors.text};
+    margin-top: 24px;
+
+
 `;
 
 export const Code = styled.p`
@@ -54,7 +65,9 @@ export const A = styled.a`
     color:${({ theme }) => theme.colors.project};
 
   :hover{
-    color:${({ theme }) => theme.colors.link};
+    :hover {
+        filter:brightness(120%);
+    };
 }
   :visited{
     color:none;
