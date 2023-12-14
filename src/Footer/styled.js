@@ -1,9 +1,8 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as github  } from "../image/github.svg"
-import { ReactComponent as githubHover  } from "../image/githubHover.svg"
-import { ReactComponent as facebook  } from "../image/facebook.svg"
-import { ReactComponent as linkedin  } from "../image/linkedin.svg"
-import { ReactComponent as instagram  } from "../image/instagram.svg"
+import { ReactComponent as github } from "../image/github.svg"
+import { ReactComponent as facebook } from "../image/facebook.svg"
+import { ReactComponent as linkedin } from "../image/linkedin.svg"
+import { ReactComponent as instagram } from "../image/instagram.svg"
 
 export const Wrraper = styled.div`
     max-width: 691px;
@@ -24,6 +23,7 @@ export const Email = styled.span`
     font-weight: 900;
     line-height: 38,73px;
     letter-spacing: 5%;
+    color:${({ theme }) => theme.colors.project};
 `;
 export const Article = styled.article`
     font-size: 18px;
@@ -42,23 +42,31 @@ export const Github = styled(github)`
     max-height:48px;
     margin-right: 24px;
     cursor: pointer;
-    
-    :hover{
-      color:${(githubHover)};
+  :hover{
+        filter:brightness(120%);
     }
 `;
 export const Facebook = styled(facebook)`
     max-width: 48px;
     max-height:48px;
     margin-right: 24px;
+  :hover{
+        filter:brightness(120%);
+    }
 `;
 export const Linkedin = styled(linkedin)`
     max-width: 48px;
     max-height:48px;
     margin-right: 24px;
+  :hover{
+        filter:brightness(120%);
+    }
 `;
 export const Instagram = styled(instagram)`
     max-width: 48px;
     max-height:48px;
     margin-right: 24px;
+  :hover{
+        filter:brightness(120%);
+    }
 `;

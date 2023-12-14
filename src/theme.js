@@ -9,7 +9,7 @@ export const theme = {
         post: "#0366D6",// poczta
         universal: "#FFFFFF",//text,tło, kafelka
         project: "#0366D6",// nazwy projektów 
-        link: "#ff0000",// linki, hover 
+        link: "#ff0000",// linki=> hover 
     },
     breakpoints: {
         full: 1500,
