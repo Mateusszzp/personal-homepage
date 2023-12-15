@@ -1,8 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as github } from "../image/github.svg"
 import { ReactComponent as facebook } from "../image/facebook.svg"
 import { ReactComponent as linkedin } from "../image/linkedin.svg"
 import { ReactComponent as instagram } from "../image/instagram.svg"
+
 
 export const Wrraper = styled.div`
     max-width: 691px;
@@ -17,23 +18,30 @@ export const Span = styled.span`
     color:${({ theme }) => theme.colors.text};
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 120px;
     `;
-export const Email = styled.span`
+export const Email = styled.a`
     font-size: 32px;
     font-weight: 900;
     line-height: 38,73px;
     letter-spacing: 5%;
     color:${({ theme }) => theme.colors.project};
+    margin-top: 24px;
+    cursor: pointer;
+    text-decoration: none;
 `;
 export const Article = styled.article`
     font-size: 18px;
     font-weight: 400px;
     line-height: 25,2px;
     letter-spacing: 5%;
+    color:${({ theme }) => theme.colors.text};
+    margin-top: 24px;
 `;
 
 export const Icon = styled.div`
 flex-direction: row;
+margin-top: 56px;
 
 
 `;
